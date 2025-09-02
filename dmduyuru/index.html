@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyuru Paneli - BerlinXR.cfd</title>  <!-- ItemSatis Honour01 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://berlinxr.cfd/style.css">
+    <style>
+        .panel-form { max-width: 600px; margin: auto; background: #1e1e1e; padding: 20px; border-radius: 12px; }
+        .panel-form label { display: block; margin-bottom: 6px; font-weight: 500; color: #fff; }
+        .panel-form input, .panel-form textarea { 
+            width: 100%; padding: 10px; margin-bottom: 15px;
+            border: 1px solid #333; border-radius: 8px; background: #2a2a2a; color: #fff;
+        }
+        .panel-form input[type="submit"] {
+            background: #4CAF50; color: #fff; font-weight: bold; cursor: pointer;
+        }
+        .panel-form input[type="submit"]:hover { background: #45a049; }
+
+    </style>
+</head>  
+                                  <!-- ItemSatis Honour01 -->
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="https://berlinxr.cfd/logox.png" alt="logogif" style="width:48px;height:48px; border-radius: 50%;"></div>
+            <ul class="nav-links"><!-- ItemSatis Honour01 -->
+                <li><a href="https://www.itemsatis.com/profil/honour01.html?degerlendirmeler">İtemSatış</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="panel" class="section">
+        <h2>Duyuru Paneli (Demo)</h2> 
+        <div class="panel-form"> <!-- ItemSatis Honour01 -->
+            <form method="POST">
+                <label for="token">Bot Token</label>
+                <input type="text" id="token" name="token" required>
+
+                <label for="guild_id">Sunucu ID (Opsiyonel)</label>
+                <input type="text" id="guild_id" name="guild_id">
+
+                <label for="mesaj">Mesaj</label>
+                <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+
+                <input type="submit" value="Gönder">
+            </form>               <!-- ItemSatis Honour01 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Berlin. Tüm hakları saklıdır.</p> 
+    </footer>
+
+    <script>
+
+    </script>
+</body>
+</html>
