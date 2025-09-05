@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomba Paneli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://berlinxr.cfd/style.css">
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+
+        .panel-form { max-width: 600px; margin: auto; margin-top: 17px; background: #1e1e1e; padding: 20px; border-radius: 12px; }
+        .panel-form label { 
+            display: block; 
+            margin-bottom: 6px; 
+            font-weight: 500; 
+            color: #fff; 
+        }
+
+        .panel-form input, .panel-form textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            margin-top: 10px;
+            border: 1px solid #333; 
+            border-radius: 8px; 
+            background: #2a2a2a; 
+            color: #fff;
+        }
+
+        .panel-form button{ 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            margin-top: 10px;
+            border: 1px solid #333;
+            border-radius: 8px; 
+            background: #2a2a2a; 
+            color: #fff;
+        }
+
+        .del {
+            display: flex;
+            justify-content: space-between; /* Butonlar arası boşluk */
+            gap: 10px; /* opsiyonel, boşluk istiyorsan */
+            margin: 10px 0;
+        }
+
+.del button { 
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #333; 
+    border-radius: 8px; 
+    background: #2a2a2a; 
+    color: #fff; 
+    cursor: pointer;
+}
+
+
+        .panel-form button {
+            background: #4CAF50; color: #fff; font-weight: bold; cursor: pointer; margin-top: 12px;
+        }
+        .panel-form button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="https://itemsatis.berlinxr.cfd/1.jpg" alt="logo" style="width:48px;height:48px; border-radius: 50%;"></div>
+            <ul class="nav-links">
+                <li><a href="#">ItemSatıs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Bomba Paneli</h2>
+        <div class="pforms">
+    <div class="panel">
+        <form class="panel-form">
+            <div class="del">
+    <button>Bütün Kanalları Sil</button>
+    <button>Bütün Rolleri Sil</button>
+</div>
+
+</form>
+
+        <form class="panel-form">
+    <div>
+            <label for="create_channels">Yeni Kanallar Oluştur</label>
+        <input type="text" id="channelName" placeholder="Kanal ismini gir">
+        <button>15 Yeni Kanal Oluştur</button>
+    </div>
+        </form>
+
+        <form class="panel-form">
+    <div>
+        <label for="send_message">Tüm Kanallara Mesaj Gönder</label>
+        <input type="text" id="messageText" placeholder="Mesajını gir">
+        <button>Tüm Kanallara Mesaj Gönder</button>
+    </div>
+        </form>
+        </div>
+        </div>
+    </section>
+<p>Bu site tamamen statik demo sitesidir. Tam halini kullanmak için ilanı satın alabilirsiniz.</p>
+    <footer>
+        <p id="copyright">&copy; 2025 Schatten. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
