@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mağaza Profili</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #181a1b;
+            color: #e0e0e0;
+        }
+        .profile-header {
+            background: linear-gradient(90deg, #4e54c8, #8f94fb);
+            color: #fff;
+            padding: 90px 0 40px 0;
+            border-radius: 0 0 30px 30px;
+        }
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #23272b;
+            object-fit: cover;
+            margin-top: -60px;
+            background: #23272b;
+        }
+        .stat-box {
+            background: #23272b;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            color: #e0e0e0;
+        }
+        .stat-box small {
+            color: #b0b0b0;
+        }
+        .card {
+            background: #23272b;
+            color: #e0e0e0;
+            border: none;
+        }
+        .card-body ul li {
+            color: #b0b0b0;
+        }
+        .btn-primary, .btn-outline-primary {
+            background: #4e54c8;
+            border-color: #4e54c8;
+        }
+        .btn-primary:hover, .btn-outline-primary:hover {
+            background: #8f94fb;
+            border-color: #8f94fb;
+        }
+        .btn-outline-secondary {
+            color: #e0e0e0;
+            border-color: #b0b0b0;
+        }
+        .btn-outline-secondary:hover {
+            background: #23272b;
+            color: #fff;
+        }
+        .badge.bg-success {
+            background-color: #27ae60 !important;
+        }
+        a.btn-link {
+            color: #8f94fb;
+        }
+        a.btn-link:hover {
+            color: #4e54c8;
+        }
+        footer {
+            color: #b0b0b0;
+        }
+        /* Hizmetlerimiz kutuları */
+        .service-card {
+            background: #23272b;
+            border-radius: 10px;
+            padding: 24px 18px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(30,30,30,0.12);
+            border: 1px solid #23272b;
+            transition: box-shadow .2s;
+        }
+        .service-card:hover {
+            box-shadow: 0 4px 16px rgba(80,80,160,0.18);
+        }
+        .service-icon {
+            font-size: 2.5rem;
+            color: #8f94fb;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-header text-center">
+        <img src="logo.webp" class="profile-avatar shadow" alt="Mağaza Avatarı">
+        <h2 class="mt-3 mb-1">Honour01</h2>
+        <span class="badge bg-success mb-2">Kimlik Onaylı Mağaza <i class="fa fa-check"></i></span>
+        <p class="mb-0">Oyun içi item, hesap ve dijital ürün satışında güvenilir adres.</p>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="stat-box mb-3">
+                    <h5><i class="fa fa-star text-warning"></i> 7.6/10</h5>
+                    <small>Mağaza Puanı</small>
+                </div>
+                <div class="stat-box mb-3">
+                    <h5>130+</h5>
+                    <small>Toplam Satış</small>
+                </div>
+                <div class="stat-box mb-3">
+                    <h5>15 dakika</h5>
+                    <small>Ortalama Yanıt Süresi</small>
+                </div>
+                <div class="stat-box mb-3">
+                    <h5>2 yıl</h5>
+                    <small>Üyelik Süresi</small>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary"><i class="fa fa-comments"></i> Mesaj Gönder</button>
+                    <button class="btn btn-outline-secondary"><i class="fa fa-heart"></i> Favorilere Ekle</button>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5>Mağaza Hakkında</h5>
+                        <p>Merhaba! 2022'den beri güvenli ve hızlı şekilde oyun içi item, hesap ve dijital ürün satışı yapıyoruz. Müşteri memnuniyeti önceliğimizdir. Tüm siparişlerinizde hızlı teslimat garantisi!</p>
+                        <ul>
+                            <li>7/24 aktif destek</li>
+                            <li>Güvenli ödeme</li>
+                            <li>Hızlı teslimat</li> 
+                        </ul>
+                    </div>
+                </div>
+                <!-- Ürünler bölümü kaldırıldı, yerine Hizmetlerimiz eklendi -->
+                <h5 class="mb-3">Hizmetlerimiz</h5>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa fa-gem"></i></div>
+                            <h6>Oyun İçi Item Satışı</h6>
+                            <p>Popüler oyunlarda güvenli ve hızlı şekilde item satışı yapıyoruz. Hesabınıza doğrudan teslimat!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa fa-shield-alt"></i></div>
+                            <h6>Güvenli Hesap Transferi</h6>
+                            <p>Hesaplarınızın güvenli şekilde transfer edilmesi ve teslimatı.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fa fa-headset"></i></div>
+                            <h6>7/24 Canlı Destek</h6>
+                            <p>Her an ulaşabileceğiniz hızlı ve çözüm odaklı müşteri desteği.</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mt-5 mb-3">Müşteri Yorumları</h5>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="rounded-circle me-2" width="40" height="40" alt="Profil Fotoğrafı">
+                            <div>
+                                <strong>LevonekaShop</strong>
+                                <span class="badge bg-success ms-2">5.0 <i class="fa fa-star"></i></span>
+                            </div>
+                        </div>
+                        <p>başarılı hızlı sürede elime teslim geçti</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="rounded-circle me-2" width="40" height="40" alt="Profil Fotoğrafı">
+                            <div>
+                                <strong>KilleR01</strong>
+                                <span class="badge bg-success ms-2">5.0 <i class="fa fa-star"></i></span>
+                            </div>
+                        </div>
+                        <p>temiz hesap satıcı çok ilgili tavsiye ederim</p>
+                    </div>
+                </div>
+                <div class="text-end mt-2">
+                    <a href="https://www.itemsatis.com/profil/honour01.html?degerlendirmeler" class="btn-link">Tüm Yorumları Gör</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-5 mb-3 text-muted">
+        &copy; 2025 Mağaza Profili. Tüm hakları saklıdır.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
